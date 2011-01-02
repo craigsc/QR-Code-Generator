@@ -35,7 +35,7 @@ h1 {
 
 #qrarea {
 	display: none;
-	margin: 20px auto 20px auto;
+	margin: 20px auto 15px auto;
 }
 
 #slider-container {
@@ -48,17 +48,18 @@ h1 {
 }
 
 #qrcode {
-	height: 125px;
-	width: 125px;
+	height: 200px;
+	width: 200px;
 	margin: auto;
-	margin-bottom: 10px;
-	background: url(../images/ajax-loader.gif) no-repeat center center;
+	margin-bottom: 20px;
+	background: url(../images/spinner.gif) no-repeat center center;
 }
 
 #footer {
 	width: 100%;
 	text-align: center;
-	padding: 10px 0px 10px 0px;
+	padding: 5px 0px 5px 0px;
+	font-size: 12px;
 }
 
 #content {

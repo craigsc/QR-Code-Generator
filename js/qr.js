@@ -1,10 +1,10 @@
 $(document).ready(function() {
-	var size = 125;
+	var size = 200;
 	$("#slider").slider({
 		min: 50,
-		max: 500,
+		max: 350,
 		step: 25,
-		value: 125,
+		value: 200,
 		slide: function(event, ui) {
 			if (ui.value) {
 				size = ui.value;

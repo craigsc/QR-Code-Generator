@@ -1,9 +1,13 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="reset.css"/>
-		<link rel="stylesheet" type="text/css" href="qr.css"/>
-		<script type="text/javascript" src="qr.js"></script>
+		<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Droid+Serif:regular,bold'>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/qr.css"/>
+		<link rel="stylesheet" type="text/css" href="css/cupertino/jquery-ui-1.8.7.custom.css"/>
+		<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.7.custom.min.js"></script>
+		<script type="text/javascript" src="js/qr.js"></script>
 		<title>Android App QR Code Generator</title>
 		<meta name="description" content="The BEST Android App QR code Generator on the web!"/>
 		<meta name="keywords" content="android, qr, qr-code, qr code, android app qr code generator, app qr code generator, app to qr code, android app"/>
@@ -11,16 +15,40 @@
 	<body>
 		<div id="content">
 			<div id="header">
-				<a href="">
-					<span>
-						<img src="logo.png"/>
-						<h1>QR Code Generator</h1>
-					</span>
-				</a>
+				<div id="logo">
+					<table>
+						<tr>
+							<td><img src="images/logo.png"/></td>
+							<td style="padding-left: 10px;"><h1>QR Code Generator</h1></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id="main">
+				<p>Create a QR code for your android app easily and quickly. Either enter the package name or the application name and you're done! Try to use the package name when possible as this will open the app's detail page while putting the name of an app will search for any apps with a matching name.</p><br/>
+				<table id="input">
+					<tr id="package">
+						<td align="right"><b>Package Name</b></td>
+						<td><input type="text" size="30" id="packageName"/></td>
+					</tr>
+					<tr id="or">
+						<td colspan="2" align="center" style="padding:5px;"><i>or</i></td>
+					</tr>
+					<tr id="app">
+						<td align="right"><b>App Name</b></td>
+						<td><input type="text" size="30" id="appName"/></td>
+					</tr>
+				</table>
+				<div id="qrarea">
+					<div id="qrcode"></div>
+					<div id="slider-container">
+						<div id="slider-label">QR-Code Size: <span style="color:red;">125x125</span></div>
+						<div id="slider"></div>	
+					</div>
+				</div>
 			</div>
 			<div id="footer">
-				<hr/>
-				© 2010 <a href="http://www.craigsc.com">Craig Campbell</a>
+				&copy; 2010 <a href="http://www.craigsc.com">Craig Campbell</a>
 			</div>
 		</div>
 	</body>
